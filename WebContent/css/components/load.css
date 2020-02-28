@@ -1,0 +1,51 @@
+:root {
+    --yellow: #feb60a;
+    --red: #ff0062;
+    --blue: #00dbf9;
+    --violet: #da00f7;
+}
+
+.je-load-container{
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: var(--z-modal);
+  
+}
+
+.je-load-container span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color:red;
+  animation: load_01 1.4s infinite ease-in-out both;
+}
+
+.je-load-container span:nth-child(1){
+  background-color: var(--red);
+  animation-delay: -0.32s;
+}
+
+.je-load-container span:nth-child(2){
+  background-color: var(--blue);
+  animation-delay: -0.16s;
+}
+
+.je-load-container span:nth-child(3){
+  background-color: var(--violet);
+}
+
+@keyframes load_01{
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+

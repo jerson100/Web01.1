@@ -1,0 +1,40 @@
+/*
+    Sobreeescibiendo valores
+*/
+
+body{
+    justify-content: center;
+    background-color: rgba(0,0,0,.028);
+}
+
+.footer{
+    margin-top: initial;
+}
+
+.main-userVericiation{
+    /*margin-top: calc(var(--height-icon) + var(--padding-header) * 2);*/
+    margin: auto;
+    transform: translateY(50%);
+}
+
+.main-userVericiation .user-verification_inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-verification_inner .user-verification_wrapper{
+    padding: 1rem;
+    border: solid 1px var(--border-color);
+    position: relative;
+    max-width: 480px;
+    background-color: #fff;
+}
+
+.user-verification_wrapper .user-verification_wrapper-logo{
+    height: 3rem;
+    position: absolute;
+    bottom: calc(100% + 1rem); /*el porcentaje es relativo al height y al width para left,right*/
+    left: 50%;
+    transform: translateX(-50%);
+}
